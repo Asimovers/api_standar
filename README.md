@@ -41,17 +41,17 @@ Santiago de Chile
 
 # 
 
-# **1\. Introducción** {#1.-introducción}
+# **1\. Introducción**
 
 El presente documento tiene por objetivo describir buenas prácticas para el desarrollo de APIs-Rest.
 
 La definición de estas recomendaciones responde a la experiencia en la ejecución de diferentes proyectos desarrollados.
 
-# **2.1. Construcción de APIs** {#2.1.-construcción-de-apis}
+# **2.1. Construcción de APIs**
 
 A continuación, indicamos un conjunto de buenas prácticas semánticas y técnicas que deberían ser tomadas como base para la generación de APIs en un proyecto.
 
-### **2.1.1. Formato de URLs** {#2.1.1.-formato-de-urls}
+### **2.1.1. Formato de URLs**
 
 1. El número de versión de la API debe ir incluida en la base de la URL Ej.: [https://ejemplo.cl/api/v2/solicitudes](https://ejemplo.cl/api/v2/solicitudes)  
 2. Una URL debe identificar un recurso o una colección de recursos.  
@@ -83,7 +83,7 @@ Malos ejemplos:
 * Atributos de filtro opcionales dentro de los segmentos de la URL  
   GET [https://ejemplo.cl/api/v1/solicitudes/asc](https://ejemplo.cl/api/v2/solicitudes?tema=salud\&sort=asc)
 
-### **2.1.2. Encabezados HTTP** {#2.1.2.-encabezados-http}
+### **2.1.2. Encabezados HTTP** 
 
 Dentro de los encabezados HTTP se deberá incluir el encabezado:
 
@@ -137,7 +137,7 @@ Ejemplos:
 
 ### 
 
-### **2.1.4. Respuestas** {#2.1.4.-respuestas}
+### **2.1.4. Respuestas** 
 
 Las respuestas deberán ir en formato JSON.
 
@@ -168,7 +168,7 @@ Si la respuesta requiere metadata adicional, esta metadata deberá incluir infor
 \]  
 }
 
-### **2.1.5. Manejo de Errores** {#2.1.5.-manejo-de-errores}
+### **2.1.5. Manejo de Errores** 
 
 Los errores deberán ser devueltos utilizando los errores estándares HTTP en el header de respuesta.
 
@@ -189,7 +189,7 @@ Además, en el contenido de la respuesta se deberá incluir un objeto JSON con l
 
 | Llave | Valor |
 | ----- | ----- |
-| código | Código interno de error |
+| codigo | Código interno de error |
 | mensaje | Descripción del mensaje de error |
 | mas\_info\_url (Opcional) | URL donde se describe más información sobre el mensaje de error. |
 
