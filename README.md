@@ -15,7 +15,7 @@ Santiago de Chile
 
 # **Índice**
 
-[**1\. Introducción**](\#1.-introducción)
+[**1\. Introducción**](#1.-introducción)
 
 [2.1. Construcción de APIs](\#2.1.-construcción-de-apis)	[**3**](\#2.1.-construcción-de-apis)
 
@@ -40,7 +40,7 @@ Santiago de Chile
 [2.1.10. Referencias](\#2.1.10.-referencias)	[9](\#2.1.10.-referencias)
 
 
-# **1\. Introducción** {\#1.-introducción}
+# **1. Introducción**
 
 El presente documento tiene por objetivo describir buenas prácticas para el desarrollo de APIs-Rest.
 
