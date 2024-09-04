@@ -17,27 +17,27 @@ Santiago de Chile
 
 [**1\. Introducción**](#1.-introducción)
 
-[2.1. Construcción de APIs](\#2.1.-construcción-de-apis)	[**3**](\#2.1.-construcción-de-apis)
+[2.1. Construcción de APIs](\#2.1.-construcción-de-apis)
 
-[2.1.1. Formato de URLs](\#2.1.1.-formato-de-urls)	[3](\#2.1.1.-formato-de-urls)
+[2.1.1. Formato de URLs](\#2.1.1.-formato-de-urls)
 
-[2.1.2. Encabezados HTTP](\#2.1.2.-encabezados-http)	[4](\#2.1.2.-encabezados-http)
+[2.1.2. Encabezados HTTP](\#2.1.2.-encabezados-http)
 
-[2.1.3. Métodos HTTP](\#2.1.3.-métodos-http)	[5](\#2.1.3.-métodos-http)
+[2.1.3. Métodos HTTP](\#2.1.3.-métodos-http)
 
-[2.1.4. Respuestas](\#2.1.4.-respuestas)	[6](\#2.1.4.-respuestas)
+[2.1.4. Respuestas](\#2.1.4.-respuestas)
 
-[2.1.5. Manejo de Errores](\#2.1.5.-manejo-de-errores)	[6](\#2.1.5.-manejo-de-errores)
+[2.1.5. Manejo de Errores](\#2.1.5.-manejo-de-errores)
 
-[2.1.6. Versiones](\#2.1.6.-versiones)	[7](\#2.1.6.-versiones)
+[2.1.6. Versiones](\#2.1.6.-versiones)
 
-[2.1.7. Límites de Registros](\#2.1.7.-límites-de-registros)	[8](\#2.1.7.-límites-de-registros)
+[2.1.7. Límites de Registros](\#2.1.7.-límites-de-registros)
 
-[2.1.8. Codificación de caracteres](\#2.1.8.-codificación-de-caracteres)	[8](\#2.1.8.-codificación-de-caracteres)
+[2.1.8. Codificación de caracteres](\#2.1.8.-codificación-de-caracteres)
 
-[2.1.9. JSONP](\#2.1.9.-jsonp)	[8](\#2.1.9.-jsonp)
+[2.1.9. JSONP](\#2.1.9.-jsonp
 
-[2.1.10. Referencias](\#2.1.10.-referencias)	[9](\#2.1.10.-referencias)
+[2.1.10. Referencias](\#2.1.10.-referencias)
 
 
 # **1. Introducción**
