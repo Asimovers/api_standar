@@ -37,7 +37,7 @@ Santiago de Chile
 
 [2.9 JSONP](\#2.9-jsonp)
 
-[2.10 Referencias](\#2.10-referencias)
+[3. Referencias](\#3.-referencias)
 
 
 # **1. Introducción**
@@ -270,7 +270,7 @@ micallback({
 });
 ```
 
-### **2.1.10. Referencias**
+## 3. Referencias**
 
 A continuación se listan algunas referencias adicionales asociadas:
 
