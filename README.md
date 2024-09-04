@@ -4,7 +4,7 @@
 
 # **Asimov**
 
-Versión \[1.0\] \- \[Oct\] 2022
+Versión [1.0] 
 
 **Asimov Consultores®**   
 Los Militares 5953   
@@ -150,15 +150,17 @@ En las llaves no deberán venir valores.
 Si la respuesta requiere metadata adicional, esta metadata deberá incluir información sobre las propiedades de la respuesta. No sobre los miembros de la respuesta en sí.
 
 **Buenos ejemplos**  
+```js
 {  
 "solicitudes": \[  
  {"id": "125", "nombre": "Solicitud de acceso a ..."},  
  {"id": "834", "nombre": "Solicitud de acceso a ..."}  
 \]  
 }
+```
 
 **Malos ejemplos**
-
+```js
 * El valor identificatorio se está usando como llave.
 
 {  
@@ -167,6 +169,7 @@ Si la respuesta requiere metadata adicional, esta metadata deberá incluir infor
  {"834": "Solicitud de acceso a ..."}  
 \]  
 }
+```
 
 ### **2.1.5. Manejo de Errores** 
 
@@ -255,11 +258,14 @@ Para solicitar el resultado con JSONP deberemos incluir el parámetro callback
 [http://ejemplo.cl/v1/solicitudes?callback=micallback](http://ejemplo.cl/v1/solicitudes?callback=micallback)
 
 La respuesta que debería ser entregada es la siguiente:  
+
+```js
 micallback({  
 	solicitudes: \[  
 		{"id":435, "nombre": "Solicitud ..."}  
 \]  
 });
+```
 
 ### **2.1.10. Referencias** {#2.1.10.-referencias}
 
@@ -271,6 +277,4 @@ A continuación se listan algunas referencias adicionales asociadas:
 * [RFC 7159](http://tools.ietf.org/html/rfc7159)  
 * [ISO 8601](http://www.w3.org/TR/NOTE-datetime)
 
-[^1]:  https://www.bcn.cl/leychile/navegar?i=1078308
 
-[image1]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGMAAABjCAIAAAAAWSnCAAAD3ElEQVR4Xu2bMW5UQQyGcxcukIqSIjWiRxwADkAOEFFT0HIGOjoqShpaJGokOgIJAQGCLKs8xTjzezy/582wiHj0Faz922/yCUjELnsfbtxMGPawlJikKZY0xZKmWNIUS5piSVMsaYolTbGkKZY0xZKmWNIUS5piSVMsaYolTbGkKZY0xZKmWNIUS5piGWlqc3mw1URm/YOD/jgmuxlmSt/vy6PHGKjx881bPesfHF8oc5cHk91MMRW6YjHoHxz3l2CymzGmygvSV+wYYZixc5apDXfLUJhnxto0xTLAlFxruZn+dZNQmGfG2ommlpc+fDLEjLVrTX28dae4lryUikMozDNj51pT6iv9cy2pbD3iiLNhOZiJMnCVMMzU2eERFjfEXXUYz49Xr3GkiYxjq5tVptRXdOVOn+8/NOs1Tu4+UJvsg1MOfVM+U0z5LQc9hef85BRHTGQEW92MMeW0zC7D8f6BXhJaFc0z9JtS97cv5HdDqEdR20Jhkr9hqhbgwZ9FfEJhkgGmsFUEnAxPaFUoTNJpSq7i34bJkIRWhcIka019f/ESuxjbrL50aE8oTLLWFLY0W49k0keWkHtCYZIeU+ra7atI0vzdpzZRBzeYRPMMq0xhC5Gwmddd5uAGk2ieYbopPy+t5gm9iyFT2Oqmx9T1JE2xpCmWNMWSpljSFEuaYukxFf1phc9LUh+MYR5bJtG8ZpUp5pFkWMfMgyP8csxjq8lcUzrphItY7RzvHxSDv969ly6udZ6C3SZrTflPZZJ+xu/qwNcnT7FrJtE4wwBTG+sLIGO6++n2PQxs2SrQMWcDzgpnh0dMzGGWqTJxcZwMbtAU79PU9uAgZvyYwxhTG3h82b44TgafwoedFmaYDwCYrDJVvPeLgeLoJfrjnfgIE7XpykitzgcYVpnSv15eFhXnT02t7uCM1OrNQZ61pvTLpeK/xCXN71nmVK2OLWcqxABTuqIPtvwlDLUpqYdaIWaZMlv+EgZnSlrF39lS31hTPGNM6WLRMou1JU2cKWkVXbPYwTBTtboUa/XtN9Bij4O5asH80JZUdLGP8abMIrZqdYfmCAbkZeitHZORpkwkXORrdYfmSBE4PznVL1eyM1N+CyHDOqMmvBGS/9aUPhjrYJemmt1orEjKwVgHOzZVBDDjd02KEXKqye5NFRnn6I+8OxRTGOjjnzBVxMyDIzW+PXveN+gz3RSf19/U9en4bw4y2/cPwSY9pq4naYolTbGkKZY0xZKmWNIUS5piSVMsaYolTbGkKZY0xZKmWNIUS5piSVMsaYolTbGkKZY0xZKmWNIUy28mxm5O/Gj5FwAAAABJRU5ErkJggg==>
