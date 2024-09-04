@@ -1,6 +1,6 @@
 **Documento de trabajo**
 
-# **Buenas Prácticas Desarrollo de APIs-REST - Asimov Consultore**
+# **Buenas Prácticas Desarrollo de APIs-REST - Asimov Consultores**
 
 Versión [1.0] 
 
