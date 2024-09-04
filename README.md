@@ -17,27 +17,27 @@ Santiago de Chile
 
 [**1\. Introducción**](#1.-introducción)
 
-[2.1. Construcción de APIs](\#2.1.-construcción-de-apis)
+[2. Construcción de APIs](\#2.-construcción-de-apis)
 
-[2.1.1. Formato de URLs](\#2.1.1.-formato-de-urls)
+[2.1. Formato de URLs](\#2.1-formato-de-urls)
 
-[2.1.2. Encabezados HTTP](\#2.1.2.-encabezados-http)
+[2.2 Encabezados HTTP](\#2.2-encabezados-http)
 
-[2.1.3. Métodos HTTP](\#2.1.3.-métodos-http)
+[2.3 Métodos HTTP](\#2.3-métodos-http)
 
-[2.1.4. Respuestas](\#2.1.4.-respuestas)
+[2.4 Respuestas](\#2.4-respuestas)
 
-[2.1.5. Manejo de Errores](\#2.1.5.-manejo-de-errores)
+[2.5 Manejo de Errores](\#2.5-manejo-de-errores)
 
-[2.1.6. Versiones](\#2.1.6.-versiones)
+[2.6 Versiones](\#2.6-versiones)
 
-[2.1.7. Límites de Registros](\#2.1.7.-límites-de-registros)
+[2.7 Límites de Registros](\#2.7-límites-de-registros)
 
-[2.1.8. Codificación de caracteres](\#2.1.8.-codificación-de-caracteres)
+[2.8 Codificación de caracteres](\#2.8-codificación-de-caracteres)
 
-[2.1.9. JSONP](\#2.1.9.-jsonp)
+[2.9 JSONP](\#2.9-jsonp)
 
-[2.1.10. Referencias](\#2.1.10.-referencias)
+[2.10 Referencias](\#2.10-referencias)
 
 
 # **1. Introducción**
@@ -46,11 +46,11 @@ El presente documento tiene por objetivo describir buenas prácticas para el des
 
 La definición de estas recomendaciones responde a la experiencia en la ejecución de diferentes proyectos desarrollados.
 
-# **2.1. Construcción de APIs**
+# **2. Construcción de APIs**
 
 A continuación, indicamos un conjunto de buenas prácticas semánticas y técnicas que deberían ser tomadas como base para la generación de APIs en un proyecto.
 
-### **2.1.1. Formato de URLs**
+### **2.1 Formato de URLs**
 
 1. El número de versión de la API debe ir incluida en la base de la URL Ej.: [https://ejemplo.cl/api/v2/solicitudes](https://ejemplo.cl/api/v2/solicitudes)  
 2. Una URL debe identificar un recurso o una colección de recursos.  
@@ -82,7 +82,7 @@ Malos ejemplos:
 * Atributos de filtro opcionales dentro de los segmentos de la URL  
   GET [https://ejemplo.cl/api/v1/solicitudes/asc](https://ejemplo.cl/api/v2/solicitudes?tema=salud\&sort=asc)
 
-### **2.1.2. Encabezados HTTP** 
+### **2.1.2 Encabezados HTTP** 
 
 Dentro de los encabezados HTTP se deberá incluir el encabezado:
 
@@ -96,12 +96,16 @@ JSON admite distintos tipos de datos estándar:
 
 * Number: Un número que puede o no contener decimales.  
   Ej: 54, 55.3, 103.5  
+
 * String: Una cadena de caracteres.  
   Ej: “hola mundo”, “auto”, “mesa”  
+
 * Boolean: Indica verdadero o falso  
   Ej: true, false  
+
 * Array: Un conjunto de elementos.  
   Ej: \[“hola mundo”, “mesa”, “auto”\]  
+
 * Object: Se puede definir como un mapa de elementos.  
   Ej: {“id:” 2, “nombre”: “Arturo”, “apellido”: “zamorano”}
 
@@ -110,7 +114,7 @@ Algunos tipos de datos no son parte del estándar JSON, pero esta sería su form
 * Fechas: Se deberá usar un string con la fecha formateada usando el estándar [ISO 8601](http://www.w3.org/TR/NOTE-datetime)  
   Ej: “2001-08-22”, “18:30:45”, “1997-07-16T19:20:30”.
 
-### **2.1.3. Métodos HTTP** 
+### **2.1.3 Métodos HTTP** 
 
 Los métodos HTTP a usar deben ir en concordancia con lo definido en el [estándar HTTP](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html). El método HTTP se aplicará sobre el recurso indicado en la URL.
 
@@ -136,7 +140,7 @@ Ejemplos:
 
 ### 
 
-### **2.1.4. Respuestas** 
+### **2.1.4 Respuestas** 
 
 Las respuestas deberán ir en formato JSON.
 
@@ -170,7 +174,7 @@ Si la respuesta requiere metadata adicional, esta metadata deberá incluir infor
 }
 ```
 
-### **2.1.5. Manejo de Errores** 
+### **2.1.5 Manejo de Errores** 
 
 Los errores deberán ser devueltos utilizando los errores estándares HTTP en el header de respuesta.
 
@@ -197,7 +201,7 @@ Además, en el contenido de la respuesta se deberá incluir un objeto JSON con l
 
 *Tabla 20\. Estructura objeto JSON.*
 
-### **2.1.6. Versiones**
+### **2.1.6 Versiones**
 
 Las APIs siempre deberán incluir un número de versión.
 
@@ -209,7 +213,7 @@ Buenos ejemplos: v1 v2 v3 v4
 
 Malos ejemplos: v1,5 v1.5 1.8
 
-### **2.1.7. Límites de Registros**
+### **2.1.7 Límites de Registros**
 
 Si no se especifica un límite, entregar los resultados con un límite por defecto.
 
@@ -226,13 +230,13 @@ Ej.: para obtener los registros del 51 al 78
 
 https://ejemplo.cl/v1/solicitudes?offset=50\&limit=28
 
-### **2.1.8. Codificación de caracteres** 
+### **2.1.8 Codificación de caracteres** 
 
 La codificación a utilizar deberá ser UTF-8.
 
 Los caracteres especiales pueden ser escapados según lo especificado en el [RFC 4627](http://www.ietf.org/rfc/rfc4627.txt).
 
-### **2.1.9. JSONP**
+### **2.1.9 JSONP**
 
 JSONP o JSON con padding es una técnica de comunicación utilizada en los programas JavaScript para realizar llamadas asíncronas a dominios diferentes. JSONP es un método concebido para suplir la limitación de AJAX entre dominios, que únicamente permite realizar peticiones a páginas que se encuentran bajo el mismo dominio y puerto por razones de seguridad.
 
