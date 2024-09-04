@@ -11,6 +11,8 @@ Santiago de Chile
 [contacto@asimov.cl](mailto:contacto@asimov.cl)  
 [www.asimov.cl](http://www.asimov.cl)
 
+***
+
 # **1. Introducción**
 
 El presente documento tiene por objetivo describir buenas prácticas para el desarrollo de APIs-Rest.
