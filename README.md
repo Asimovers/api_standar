@@ -1,8 +1,6 @@
 **Documento de trabajo**
 
-# **Buenas Prácticas Desarrollo de APIs-REST**
-
-# **Asimov**
+# **Buenas Prácticas Desarrollo de APIs-REST - Asimov Consultore**
 
 Versión [1.0] 
 
@@ -12,33 +10,6 @@ Oficina 1906, Las Condes
 Santiago de Chile  
 [contacto@asimov.cl](mailto:contacto@asimov.cl)  
 [www.asimov.cl](http://www.asimov.cl)
-
-# **Índice**
-
-[**1\. Introducción**](#1.Introducción)
-
-[2. Construcción de APIs](\#2.-construcción-de-apis)
-
-[2.1. Formato de URLs](\#2.1-formato-de-urls)
-
-[2.2 Encabezados HTTP](\#2.2-encabezados-http)
-
-[2.3 Métodos HTTP](\#2.3-métodos-http)
-
-[2.4 Respuestas](\#2.4-respuestas)
-
-[2.5 Manejo de Errores](\#2.5-manejo-de-errores)
-
-[2.6 Versiones](\#2.6-versiones)
-
-[2.7 Límites de Registros](\#2.7-límites-de-registros)
-
-[2.8 Codificación de caracteres](\#2.8-codificación-de-caracteres)
-
-[2.9 JSONP](\#2.9-jsonp)
-
-[3. Referencias](\#3.-referencias)
-
 
 # **1. Introducción**
 
