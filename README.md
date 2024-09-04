@@ -242,12 +242,14 @@ Si el recurso original es:
 
 [http://ejemplo.cl/v1/solicitudes](http://ejemplo.cl/v1/solicitudes)
 
-Si la respuesta original es:  
+Si la respuesta original es:
+```js
 {  
 	solicitudes: \[  
 		{"id":435, "nombre": "Solicitud ..."}  
 \]  
 }
+```
 
 Para solicitar el resultado con JSONP deberemos incluir el parámetro callback  
 [http://ejemplo.cl/v1/solicitudes?callback=micallback](http://ejemplo.cl/v1/solicitudes?callback=micallback)
