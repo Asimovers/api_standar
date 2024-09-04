@@ -160,9 +160,9 @@ Si la respuesta requiere metadata adicional, esta metadata deberá incluir infor
 ```
 
 **Malos ejemplos**
-```js
-* El valor identificatorio se está usando como llave.
 
+* El valor identificatorio se está usando como llave.
+```js
 {  
 "solicitudes": \[  
  {"125": "Solicitud de acceso a ..."},  
