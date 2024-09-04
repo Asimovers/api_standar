@@ -15,7 +15,7 @@ Santiago de Chile
 
 # **Índice**
 
-[**1\. Introducción**](#1.-introducción)
+[**1\. Introducción**](#1.Introducción)
 
 [2. Construcción de APIs](\#2.-construcción-de-apis)
 
