@@ -111,7 +111,7 @@ Algunos tipos de datos no son parte del estándar JSON, pero esta sería su form
 * Fechas: Se deberá usar un string con la fecha formateada usando el estándar [ISO 8601](http://www.w3.org/TR/NOTE-datetime)  
   Ej: “2001-08-22”, “18:30:45”, “1997-07-16T19:20:30”.
 
-### **2.1.3. Métodos HTTP** {#2.1.3.-métodos-http}
+### **2.1.3. Métodos HTTP** 
 
 Los métodos HTTP a usar deben ir en concordancia con lo definido en el [estándar HTTP](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html). El método HTTP se aplicará sobre el recurso indicado en la URL.
 
@@ -198,7 +198,7 @@ Además, en el contenido de la respuesta se deberá incluir un objeto JSON con l
 
 *Tabla 20\. Estructura objeto JSON.*
 
-### **2.1.6. Versiones** {#2.1.6.-versiones}
+### **2.1.6. Versiones**
 
 Las APIs siempre deberán incluir un número de versión.
 
@@ -210,7 +210,7 @@ Buenos ejemplos: v1 v2 v3 v4
 
 Malos ejemplos: v1,5 v1.5 1.8
 
-### **2.1.7. Límites de Registros** {#2.1.7.-límites-de-registros}
+### **2.1.7. Límites de Registros**
 
 Si no se especifica un límite, entregar los resultados con un límite por defecto.
 
@@ -227,13 +227,13 @@ Ej.: para obtener los registros del 51 al 78
 
 https://ejemplo.cl/v1/solicitudes?offset=50\&limit=28
 
-### **2.1.8. Codificación de caracteres** {#2.1.8.-codificación-de-caracteres}
+### **2.1.8. Codificación de caracteres** 
 
-La codificación a utilizar deberá ser UTF-8.[^1]
+La codificación a utilizar deberá ser UTF-8.
 
 Los caracteres especiales pueden ser escapados según lo especificado en el [RFC 4627](http://www.ietf.org/rfc/rfc4627.txt).
 
-### **2.1.9. JSONP** {#2.1.9.-jsonp}
+### **2.1.9. JSONP**
 
 JSONP o JSON con padding es una técnica de comunicación utilizada en los programas JavaScript para realizar llamadas asíncronas a dominios diferentes. JSONP es un método concebido para suplir la limitación de AJAX entre dominios, que únicamente permite realizar peticiones a páginas que se encuentran bajo el mismo dominio y puerto por razones de seguridad.
 
@@ -267,7 +267,7 @@ micallback({
 });
 ```
 
-### **2.1.10. Referencias** {#2.1.10.-referencias}
+### **2.1.10. Referencias**
 
 A continuación se listan algunas referencias adicionales asociadas:
 
