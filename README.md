@@ -270,7 +270,7 @@ micallback({
 });
 ```
 
-## 3. Referencias**
+# **3. Referencias**
 
 A continuación se listan algunas referencias adicionales asociadas:
 
